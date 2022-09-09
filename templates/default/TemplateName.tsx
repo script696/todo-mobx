@@ -2,10 +2,10 @@ import s from "./TemplateName.module.scss";
 
 export interface ITemplateName {}
 
-const TemplateName = ({}: ITemplateName) => (
-  <div className={s.templateName}>
+const TemplateName = ({}: ITemplateName) => {
+  return <div className={s.templateName}>
     
-  </div>
-);
+  </div>;
+};
 
 export default TemplateName;

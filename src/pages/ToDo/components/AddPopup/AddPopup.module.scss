@@ -1,0 +1,63 @@
+.addPopup {
+  padding: 0 10px;
+  width: 270px;
+  height: 219px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(249, 249, 249, 0.94);
+  backdrop-filter: blur(54.3656px);
+  border-radius: 14px;
+  &__title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #3b3b3b;
+  }
+  &__text {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.078px;
+    color: #737a82;
+  }
+  &__input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 32px;
+    background: #ffffff;
+    border: 0.5px solid rgba(60, 60, 67, 0.3);
+    border-radius: 7px;
+
+  }
+  &__btnWerapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  &__btnEsc {
+    width: 100%;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #c3c3c5;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  &__btnSave {
+    width: 100%;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #3784cc;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+  }
+}
