@@ -6,6 +6,7 @@ import s from "./ToDoList.module.scss";
 export interface IToDoList {}
 
 const ToDoList = observer(({}: IToDoList) => {
+  console.log(toDo.todos);
   
   return (
     <div className={s.toDoList}>

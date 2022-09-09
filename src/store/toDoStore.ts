@@ -1,4 +1,4 @@
-import { makeAutoObservable } from "mobx";
+import { makeAutoObservable, toJS } from "mobx";
 
 class ToDo {
   todos: any = [
@@ -33,7 +33,14 @@ class ToDo {
     makeAutoObservable(this);
   }
 
-  addTodo(todo: any) {
+  addTodo(title: string, task : string) {
+    const id = toJS(this.todos).length
+    const todo = {
+      id : id + 1,
+      title,
+      task,
+      completed: false,
+    }
     this.todos.push(todo);
   }
   removeTodo(id: any) {
