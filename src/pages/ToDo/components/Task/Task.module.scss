@@ -11,6 +11,10 @@
       no-repeat;
       background-color: none;
       cursor: pointer;
+      &_completed{
+      background-color: #469D3E;
+
+      }
   }
   &__deleteBtn {
     width: 40px;
@@ -37,6 +41,9 @@
     font-weight: 400;
     font-size: 13px;
     color: #3B3B3B;
-
+    &_completed{
+      text-decoration: line-through;
+      color: #6F767E;
+    }
   }
 }
