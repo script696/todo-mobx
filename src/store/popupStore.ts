@@ -10,7 +10,6 @@ class ToDo {
   }
 
   openPopup() {
-    console.log('hi');
     
     this.addPopup.isOpen = true;
   }

@@ -8,7 +8,7 @@ export interface ITask {
   completed: boolean;
 }
 
-const Task = ({ title, task, completed, id }: ITask) => {
+const Task = ({ title, task, completed, id,  }: ITask) => {
   const completeBtnStyle = [
     s.task__completeBtn,
     completed ? s.task__completeBtn_completed : null,
