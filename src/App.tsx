@@ -6,10 +6,10 @@ import popupStore from './store/popupStore'
 const  App = observer(()=> {
 
   return (
-    <div>
+    <>
       <ToDo/>
       {popupStore.addPopup.isOpen && <AddPopup/>}
-    </div>
+    </>
   );
 });
 

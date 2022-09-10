@@ -1,7 +1,8 @@
 import { makeAutoObservable } from "mobx";
+import { IFilterStore } from "../types/types";
 
-class Filter {
-  filters: any = {
+class FilterStore {
+  filters: IFilterStore = {
     isOpen: false,
     isOn: false,
     filterCompl: true,
@@ -28,4 +29,4 @@ class Filter {
   }
 }
 
-export default new Filter();
+export default new FilterStore();

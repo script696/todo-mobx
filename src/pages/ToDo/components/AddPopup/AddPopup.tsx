@@ -3,9 +3,8 @@ import popupStore from "../../../../store/popupStore";
 import toDoStore from "../../../../store/toDoStore";
 import s from "./AddPopup.module.scss";
 
-export interface IAddPopup {}
 
-const AddPopup = ({}: IAddPopup) => {
+const AddPopup = () => {
   const [inputs, setInputs] = useState({
     title: "",
     task: "",
@@ -24,7 +23,7 @@ const AddPopup = ({}: IAddPopup) => {
       >
         <input
           value={inputs.title}
-          onChange={(e: any) =>
+          onChange={(e) =>
             setInputs((prev) => ({ ...prev, title: e.target.value }))
           }
           name="title"
@@ -34,7 +33,7 @@ const AddPopup = ({}: IAddPopup) => {
         />
         <input
           value={inputs.task}
-          onChange={(e: any) =>
+          onChange={(e) =>
             setInputs((prev) => ({ ...prev, task: e.target.value }))
           }
           name="text"

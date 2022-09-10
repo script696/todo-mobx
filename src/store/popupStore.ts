@@ -1,7 +1,8 @@
 import { makeAutoObservable } from "mobx";
+import { IPopupStore } from "../types/types";
 
-class ToDo {
-  addPopup: any = {
+class PopupStore {
+  addPopup: IPopupStore = {
     isOpen: false,
   }
 
@@ -19,4 +20,4 @@ class ToDo {
  
 }
 
-export default new ToDo();
+export default new PopupStore();

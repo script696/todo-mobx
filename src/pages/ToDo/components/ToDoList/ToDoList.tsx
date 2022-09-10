@@ -3,19 +3,19 @@ import Task from "../Task/Task";
 import toDo from "../../../../store/toDoStore";
 import Filter from "../../../../store/filterStore";
 import s from "./ToDoList.module.scss";
+import { IToDo } from "../../../../types/types";
 
-export interface IToDoList {}
 
-const ToDoList = observer(({}: IToDoList) => {
+const ToDoList = observer(() => {
   return (
     <div className={s.toDoList}>
       {toDo.todos
         .filter(
-          (item: any) =>
+          (item: IToDo) =>
             item.completed === Filter.filters.filterCompl ||
             !Filter.filters.isOn
         )
-        .map((val: any, index: number) => {
+        .map((val: IToDo, index: number) => {
           return (
             <Task
               title={val.title}
@@ -32,12 +32,3 @@ const ToDoList = observer(({}: IToDoList) => {
 
 export default ToDoList;
 
-{
-  /* <Task
-title={item.title}
-task={item.task}
-key={index}
-completed={item.completed}
-id={item.id}
-/> */
-}

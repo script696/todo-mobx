@@ -1,4 +1,3 @@
-import Button from "../../shared/ButtonWithText/ButtonWithText";
 import { observer } from "mobx-react-lite";
 import Filter from "../../store/filterStore";
 import ToDoList from "./components/ToDoList/ToDoList";
