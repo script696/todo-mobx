@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todo-mobx/static/css/main.4c7ef5c4.css",
+    "main.js": "/todo-mobx/static/js/main.38f2f719.js",
+    "static/media/trash.svg": "/todo-mobx/static/media/trash.e23312d6be3a8a1e95f0.svg",
+    "index.html": "/todo-mobx/index.html",
+    "static/media/mark.svg": "/todo-mobx/static/media/mark.4b85ad7cd2544eb6cd56.svg",
+    "main.4c7ef5c4.css.map": "/todo-mobx/static/css/main.4c7ef5c4.css.map",
+    "main.38f2f719.js.map": "/todo-mobx/static/js/main.38f2f719.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c7ef5c4.css",
+    "static/js/main.38f2f719.js"
+  ]
+}
