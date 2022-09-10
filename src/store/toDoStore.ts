@@ -1,7 +1,10 @@
 import { makeAutoObservable, toJS } from "mobx";
+import { IToDo } from "../types/types";
+
+
 
 class ToDo {
-  todos: any = [
+  todos: Array<IToDo> = [
     {
       id: 1,
       title: "Математика",
@@ -33,21 +36,23 @@ class ToDo {
     makeAutoObservable(this);
   }
 
-  addTodo(title: string, task : string) {
-    const id = toJS(this.todos).length
+  addTodo(title: string, task: string) {
+    const id = toJS(this.todos).length;
     const todo = {
-      id : id + 1,
+      id: id + 1,
       title,
       task,
       completed: false,
     }
     this.todos.push(todo);
   }
-  removeTodo(id: any) {
-    this.todos = this.todos.filter((todo: any) => todo.id !== id);
+  removeTodo(id: number) {
+    this.todos = this.todos.filter((todo: IToDo) => todo.id !== id);
   }
-  completeTodo(id: any) {
-    this.todos = this.todos.map((todo: any) => todo.id === id ? {...todo, completed: !todo.completed} : todo)
+  completeTodo(id: number) {
+    this.todos = this.todos.map((todo: IToDo) =>
+      todo.id === id ? { ...todo, completed: !todo.completed } : todo
+    );
   }
 }
 
